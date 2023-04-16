@@ -1,0 +1,168 @@
+@use '../utils/variables' as v;
+
+
+.header {
+    border-bottom: 1px solid #ececec;
+
+&__container {
+    display: flex;
+    align-items: center;
+}
+
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: v.$font-weight-max;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: v.$accent-color;
+}
+
+
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 53px;
+}
+
+
+.nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    font-weight: v.$font-weight-mid;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: #212121;
+    position: relative;
+    transition: color v.$time v.$time-function;
+
+&::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: v.$accent-color;
+    transform: scaleX(0);
+    transition: transform v.$time v.$time-function;
+    transform-origin: left;
+}
+
+&:hover::after,
+&:focus::after {
+    transform: scaleX(1);
+}
+
+&:hover,
+&:focus {
+    color: v.$accent-color;
+}
+
+&:active {
+    color: purple;
+}
+
+}
+
+
+
+.nav__link-current {
+    color: blue;
+
+
+&::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: v.$accent-color;
+    transform: scaleX(1);
+}
+
+}
+
+
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+
+&__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+&__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    font-weight: v.$font-weight-mid;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    transition: color v.$time v.$time-function;
+}
+
+
+&__link:hover,
+&__link:focus {
+    color: v.$accent-color;
+}
+
+&__link:active {
+    color: purple;
+}
+
+&__link {
+    display: block;
+    position: relative;
+}
+
+&__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: v.$accent-color;
+    transform: scaleX(0);
+    transition: transform v.$time v.$time-function;
+    transform-origin: left;
+}
+
+&__link:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* HEADER ICONS */
+&__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+}

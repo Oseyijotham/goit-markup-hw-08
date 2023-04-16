@@ -1,0 +1,122 @@
+@use '../utils/variables' as v;
+
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+
+
+&__title {
+    padding-bottom: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: v.$font-weight-max;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+&__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+&__item {
+    background-color: #FFFFFF;
+}
+
+
+&__item-title {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: v.$font-weight-mid;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+&__item-text {
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+}
+
+/* TEAM ICONS */
+.socials {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+&__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+&__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #AFB1B8;
+    transition: color v.$time v.$time-function, background-color v.$time v.$time-function;
+}
+
+&__link:hover,
+&__link:focus {
+    background-color: v.$accent-color;
+    color: #FFFFFF;
+
+}
+
+&__icon {
+    fill: currentColor;
+}
+
+
+}
+
+
+/*
+.team-icon-instagram {
+    margin-top: 28px;
+    margin-left: 44px;
+    margin-bottom: 42px;
+    margin-right: 22px;
+    fill: #757575;
+    cursor: pointer;
+}
+
+.team-icon-twitter {
+    margin-top: 28px;
+    margin-bottom: 42px;
+    margin-right: 22px;
+    fill: #757575;
+    cursor: pointer;
+}
+
+.team-icon-facebook {
+    margin-top: 28px;
+    margin-bottom: 42px;
+    margin-right: 22px;
+    fill: #757575;
+    cursor: pointer;
+}
+
+.team-icon-linkedin {
+    margin-top: 28px;
+    margin-bottom: 42px;
+    fill: #757575;
+    cursor: pointer;
+} */

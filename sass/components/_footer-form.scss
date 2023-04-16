@@ -1,0 +1,82 @@
+@use '../utils/variables' as v;
+
+
+.footer-form {
+    margin-left: 93px;
+
+
+&__title {
+    display: block;
+    font-weight: v.$font-weight-max;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+&__input-space {
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: #FFFFFF;
+    font-weight: v.$font-weight-min;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.03em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    transition: border-color v.$time v.$time-function;
+}
+
+&__input-space:hover,
+&__input-space:focus {
+    border-color: v.$accent-color;
+    cursor: pointer;
+}
+
+&__button {
+    margin-left: 12px;
+    background-color: v.$accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+    padding-right: 28px;
+    transition: color v.$time v.$time-function;
+    border: none;
+}
+
+&__button:hover,
+&__button:focus {
+    color: #212121;
+}
+
+&__button-details {
+    display: flex;
+    align-items: center;
+}
+
+&__button-text {
+    font-weight: v.$font-weight-max;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+}
+
+&__button-icon {
+    margin-left: 10px;
+}
+
+&__icon {
+    fill: currentColor;
+}
+}

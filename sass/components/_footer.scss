@@ -1,0 +1,120 @@
+@use '../utils/variables' as v;
+
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+
+
+
+&__container {
+    display: flex;
+}
+
+&__info-area {
+    display: flex;
+    flex-direction: column;
+}
+
+
+&__logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: v.$font-weight-max;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: v.$accent-color;
+    margin-bottom: 9px;
+}
+
+&__info-item:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+&__address-link {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    transition: color v.$time v.$time-function;
+}
+
+&__contact-link {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    transition: color v.$time v.$time-function;
+}
+
+&__address-link:hover,
+.footer__address-link:focus {
+    color: v.$accent-color;
+}
+
+&__address-link:active {
+    color: purple;
+}
+
+&__contact-link:hover,
+&__contact-link:focus {
+    color: v.$accent-color;
+}
+
+&__contact-link:active {
+    color: purple;
+}
+}
+
+
+
+.footer-socials {
+    margin-left: 70px;
+
+
+
+&__title {
+    font-style: normal;
+    font-weight: v.$font-weight-max;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+&__list {
+    display: flex;
+}
+
+&__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+&__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color v.$time v.$time-function;
+}
+
+&__link:hover,
+&__link:focus {
+    background-color: v.$accent-color;}
+
+&__icon {
+    fill: currentColor;
+}
+}
