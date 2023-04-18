@@ -47,8 +47,52 @@
 
 
             </ul>
+
+            <button type="button" class="menu-button" header-window-open>
+                <svg width="24px" height="16px" class="menu-button__icon">
+                    <use href="./images/icons.svg#icon-menuButton"></use>
+                </svg></button>
+
+            <div class="menu menu__is-hidden" header-window>
+                <div class="header-window">
+                <button type="button" class="header-window__button" header-window-close>
+                    <svg width="11px" height="11px" class="header-window__close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg></button>
+
+                    <nav class="window-nav">
+                        <ul class="window-nav__list">
+                    
+                            <li class="window-nav__item"><a href="index.html" class="window-nav__link window-nav__link-current">Studio</a>
+                            </li>
+                            <li class="window-nav__item"><a href="portfolio.html" class="window-nav__link">Portfolio</a></li>
+                            <li class="window-nav__item"><a href="#" class="window-nav__link">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="window-contacts-list">
+                    <li class="window-contacts-list__item"><a href="tel:+380961111111" class="window-contacts-list__link">
+                            +38 096 111 11 11</a></li>
+
+                    <li class="window-contacts-list__item"><a href="mailto:example@gmail.ru" class="window-contacts-list__link">
+                            info@devstudio.com</a></li>
+                    </ul>
+
+                    <ul class="window-socials-list">
+                    <li class="window-socials-list__item"><a href="#" class="window-socials-list__link">Instagram</a></li>
+                    <svg width="0" height="22" class="window-socials-list__line"></svg>
+                    <li class="window-socials-list__item"><a href="#" class="window-socials-list__link">Twitter</a></li>
+                    <svg width="0" height="22" class="window-socials-list__line"></svg>
+                    <li class="window-socials-list__item"><a href="#" class="window-socials-list__link">Facebook</a></li>
+                    <svg width="0" height="22" class="window-socials-list__line"></svg>
+                    <li class="window-socials-list__item"><a href="#" class="window-socials-list__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <script src="js/header-window.js" type="module"></script>
+
         </div>
-        </header>
+        </header><!--
         <main>
             <section class="hero">
                 <div class="container">
@@ -495,6 +539,7 @@
         </div>    
         </div>
         <script src="./js/modal.js" type="module"></script>
+        -->
 </body>
 
 </html>

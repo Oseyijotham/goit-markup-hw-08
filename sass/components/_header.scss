@@ -7,15 +7,15 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    @media screen and (min-width: 320px) {
-    width: 320px;
-   }
-   @media screen and (min-width: 480px) {
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     width: 480px;
    }
-    @media screen and (min-width: 1200px) {
+   @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    width: 768px;
+   }
+    @media screen and (min-width: b.$desktop) {
     width: 1200px;
-    }
+   }
 
 }
 
@@ -37,12 +37,14 @@
     font-weight: v.$font-weight-max;
     letter-spacing: 0.03em;
     color: v.$accent-color;
-    @media screen and (min-width: b.$mobile) {
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     font-size: 24px;
     line-height: calc(28/24);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
     
-    @media screen and (min-width: b.$tablet) {
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max){
     font-size: 24px;
     line-height: calc(28/24);
 }
@@ -53,18 +55,55 @@
 }
 }
 
+.menu-button {
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+            display: none;
+        }
+    
+        @media screen and (min-width: b.$desktop) {
+            display: none;
+        }
+    margin-left: auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-right: 23px;
+    background-color: white;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
-.nav__list {
+&:hover,
+&:focus {
+    color: v.$accent-color;
+}
+
+&__icon{
+    fill: currentColor;
+}
+}
+
+
+
+
+.nav{
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    display: none;
+}
+
+&__list {
     display: flex;
     align-items: center;
     margin-left: 93px;
 }
 
-.nav__item:not(:last-child) {
+&__item:not(:last-child) {
     margin-right: 53px;
 }
-
+}
 
 .nav__link {
     padding-top: 32px;
@@ -133,41 +172,64 @@
 
 
 .contacts-list {
+    
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    display: none;
+}
+
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+}
+
+@media screen and (min-width: b.$desktop) {
     display: flex;
     margin-left: auto;
     align-items: center;
+}
 
 
 &__item:not(:last-child) {
+    
+    @media screen and (min-width: b.$desktop) {
     margin-right: 50px;
+    }
 }
 
 &__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: block;
     font-weight: v.$font-weight-mid;
-    font-size: 14px;
-    line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: #757575;
     display: flex;
     align-items: center;
     transition: color v.$time v.$time-function;
-    @media screen and (min-width: b.$mobile) {
-    font-size: 24px;
-    line-height: calc(28/24);
-}
+    display: block;
+    position: relative;
     
-    @media screen and (min-width: b.$tablet) {
-    font-size: 12px;
-    line-height: calc(14/12);
-}
     
     @media screen and (min-width: b.$desktop) {
     font-size: 14px;
     line-height: calc(16/14);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+}
+&__link[href="mailto:example@gmail.ru"] {
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    font-size: 12px;
+    line-height: calc(14/12);
+    padding-top: 21px;
+}
+}
+
+&__link[href="tel:+380961111111"] {
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    font-size: 12px;
+    line-height: calc(14/12);
+    padding-top: 10px;}
 }
 
 
@@ -180,10 +242,6 @@
     color: purple;
 }
 
-&__link {
-    display: block;
-    position: relative;
-}
 
 &__link::after {
     content: "";
