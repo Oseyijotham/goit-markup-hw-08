@@ -3,22 +3,7 @@
 
 
 
-   .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    width: 480px;
-   }
-   @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    width: 768px;
-   }
-    @media screen and (min-width: b.$desktop) {
-    width: 1200px;
-   }
-
-}
-
+   
 
 
 .header {

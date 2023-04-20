@@ -1,3 +1,6 @@
+@use '../utils/breakpoints' as b;
+
+
 $time: 250ms;
 $time-function: cubic-bezier(0.4, 0, 0.2, 1);
 $accent-color: #2196F3;
@@ -30,4 +33,23 @@ img {
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: b.$desktop) {
+        width: 1200px;
+    }
+
 }
