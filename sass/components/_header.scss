@@ -41,13 +41,16 @@
 }
 
 .menu-button {
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
             display: none;
-        }
+}
     
-        @media screen and (min-width: b.$desktop) {
+@media screen and (min-width: b.$desktop) {
             display: none;
-        }
+}
+
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    
     margin-left: auto;
     margin-top: 22px;
     margin-bottom: 22px;
@@ -58,7 +61,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;}
 
 
 &:hover,
@@ -75,14 +78,20 @@
 
 
 .nav{
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+@media screen and (min-width: b.$desktop) {
+margin-left: 93px;
+} 
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+margin-left: 88px;  
+}    
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     display: none;
 }
 
 &__list {
     display: flex;
     align-items: center;
-    margin-left: 93px;
+    
 }
 
 &__item:not(:last-child) {

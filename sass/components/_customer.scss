@@ -1,12 +1,15 @@
 @use '../utils/variables' as v;
-@use '../utils/breakpoints';
+@use '../utils/breakpoints' as b;
 
 /* CUSTOMER-SECTION CLASS*/
 
 .customer {
     padding-top: 94px;
     padding-bottom: 94px;
-
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
 
 /* CUSTOMER ICONS */
 
@@ -18,14 +21,26 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    margin-bottom: 30px;
+    }
 }
 
 &__list {
     display: flex;
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+    
 }
 
 &__item:not(:first-child) {
     margin-left: 30px;
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    margin-left: 0px;
+}
 }
 
 &__link {
@@ -38,6 +53,10 @@
     border-radius: 4px;
     color: #AFB1B8;
     transition: color v.$time v.$time-function, border-color v.$time v.$time-function;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    width: 226px;
+    height: 92px;
+}
 }
 
 

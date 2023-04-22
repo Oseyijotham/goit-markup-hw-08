@@ -1,10 +1,20 @@
 @use '../utils/variables' as v;
-@use '../utils/breakpoints';
+@use '../utils/breakpoints' as b;
 
 
 .footer-form {
-    margin-left: 93px;
+margin-left: 93px;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+margin-left: 0px;
+margin-top: 52px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+margin-left: 0px;
+}
 
 &__title {
     display: block;
@@ -14,6 +24,17 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    margin-bottom: 20px;
+}
+}
+
+&__label {
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
 
 &__input-space {
@@ -33,6 +54,15 @@
     padding-bottom: 15px;
     padding-left: 16px;
     transition: border-color v.$time v.$time-function;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    width: 450px;
+    height: 50px;
+}
 }
 
 &__input-space:hover,

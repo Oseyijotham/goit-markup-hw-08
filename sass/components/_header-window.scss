@@ -30,13 +30,13 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    /*@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
         display: none;
     }
 
     @media screen and (min-width: b.$desktop) {
             display: none;
-        }
+        }*/
 
         &__button {
             background-color: white;

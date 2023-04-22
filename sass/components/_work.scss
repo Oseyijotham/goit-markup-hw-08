@@ -1,9 +1,13 @@
 @use '../utils/variables' as v;
-@use '../utils/breakpoints';
+@use '../utils/breakpoints' as b;
 
 
 .work {
     padding-bottom: 94px;
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+        display: none;
+}
+
 
 
 &__title {

@@ -1,11 +1,16 @@
 @use '../utils/variables' as v;
-@use '../utils/breakpoints';
+@use '../utils/breakpoints' as b;
 
 
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 
 
 &__title {
@@ -18,13 +23,22 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    font-size: 28px;
+    line-height: calc(33/28);
+    padding-bottom: 30px; }
 }
 
 &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
+
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    grid-template-columns: 1fr 1fr;
+        }
 }
+
 
 &__item {
     background-color: #FFFFFF;

@@ -1,5 +1,5 @@
 @use '../utils/variables' as v;
-@use '../utils/breakpoints';
+@use '../utils/breakpoints' as b;
 
 
 .footer {
@@ -11,6 +11,10 @@
 
 &__container {
     display: flex;
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 }
 
 &__info-area {
@@ -28,6 +32,18 @@
     letter-spacing: 0.03em;
     color: v.$accent-color;
     margin-bottom: 9px;
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    font-size: 24px;
+    line-height: calc(28/24);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+    
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    font-size: 24px;
+    line-height: calc(28/24);
+}
+
 }
 
 &__info-item:not(:last-child) {
@@ -77,6 +93,9 @@
 
 .footer-socials {
     margin-left: 70px;
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    margin-left: 234px;
+}
 
 
 
