@@ -35,6 +35,10 @@
     min-height: 609px;
     width: 450px;
 }
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    width: 450px;
+    height: 609px;
+}
 
 
 &__button {
@@ -75,6 +79,10 @@ fill: currentColor;}
     margin-left: 40px;
     margin-right: 40px;
 }
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    margin-left: 40px;
+    margin-right: 40px;
+}
 }
 
 &__form {
@@ -84,7 +92,10 @@ fill: currentColor;}
     margin-top: 26px;
     margin-left: 40px;
 }
-    
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+   margin-top: 26px;
+   margin-left: 40px;
+}
 }
 }
 
@@ -134,6 +145,10 @@ fill: currentColor;}
     width: 370px;
     height: 40px;
     }
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    width: 370px;
+    height: 40px;
+    }
 }
 
 &__input-space:hover,
@@ -172,6 +187,10 @@ fill: currentColor;}
     width: 370px;
     height: 120px;
 }
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    width: 370px;
+    height: 120px;
+}
 }
 
 &__comments-input-space:hover,
@@ -184,7 +203,13 @@ fill: currentColor;}
 
 .checkbox {
     margin-bottom: 30px;
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    margin-bottom: 30px;
+    }
 
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    margin-bottom: 30px;
+    }
 
 &__is-hidden {
     opacity: 0;
@@ -224,6 +249,10 @@ margin-left: 8.38px;
 letter-spacing: 0.03em;
 color: #757575;
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+font-size: 12px;
+line-height: 14px;
+}
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
 font-size: 12px;
 line-height: 14px;
 }

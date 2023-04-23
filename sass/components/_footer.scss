@@ -15,13 +15,28 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 &__info-area {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    align-items: center;
+    }
 }
 
+&__info-list {
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
 
 &__logo {
     text-decoration: none;
@@ -32,22 +47,37 @@
     letter-spacing: 0.03em;
     color: v.$accent-color;
     margin-bottom: 9px;
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     font-size: 24px;
     line-height: calc(28/24);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-bottom: 13px;
+    text-align: center;
 }
     
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     font-size: 24px;
     line-height: calc(28/24);
+    margin-bottom: 13px;
+    text-align: center;
 }
 
 }
 
-&__info-item:not(:last-child) {
+&__address-link {
+display: flex;
+flex-direction: column;
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+align-items: center;
+}
+   
+}
+
+/*&__info-item:not(:last-child) {
     margin-bottom: 2px;
+}*/
+
+&__info-item:nth-child(2){
+margin-bottom: 9px;
 }
 
 &__address-link {
@@ -58,6 +88,7 @@
     color: #FFFFFF;
     font-style: normal;
     transition: color v.$time v.$time-function;
+   
 }
 
 &__contact-link {
@@ -69,6 +100,18 @@
     font-style: normal;
     transition: color v.$time v.$time-function;
 }
+
+/*&__contact-link {
+    margin-bottom: 9px;
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+        margin-bottom: 8px;
+    }
+
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+        margin-bottom: 8px;
+    }
+
+}*/
 
 &__address-link:hover,
 .footer__address-link:focus {
@@ -93,6 +136,11 @@
 
 .footer-socials {
     margin-left: 70px;
+    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 48px;
+    }
     @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     margin-left: 234px;
 }
@@ -108,6 +156,13 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+     text-align: center;   
+    }
+
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    text-align: center;
+  }
 }
 
 &__list {

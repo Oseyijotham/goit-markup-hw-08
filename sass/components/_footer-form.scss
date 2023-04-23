@@ -14,6 +14,18 @@ align-items: center;
 
 @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
 margin-left: 0px;
+margin-top: 60px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+&__start {
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 }
 
 &__title {
@@ -24,9 +36,8 @@ margin-left: 0px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     margin-bottom: 20px;
-}
+
 }
 
 &__label {
@@ -35,10 +46,14 @@ margin-left: 0px;
     flex-direction: column;
     align-items: center;
     }
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 &__input-space {
-    margin-top: 20px;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -62,6 +77,7 @@ margin-left: 0px;
 @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     width: 450px;
     height: 50px;
+    margin-bottom: 20px;
 }
 }
 

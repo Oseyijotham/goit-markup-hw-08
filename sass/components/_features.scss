@@ -5,6 +5,10 @@
 .features {
     padding-top: 94px;
     padding-bottom: 100px;
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -12,6 +16,12 @@
 
 &__list {
     display: flex;
+
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
 
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
    display: grid;
@@ -22,6 +32,10 @@
 
 &__item:not(:last-child){
     margin-right: 30px;
+
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    margin-right: 0px;
+}
 
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     margin-right: 0px;
@@ -36,6 +50,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+        text-align: center;
+    }
 }
 
 &__text {
@@ -55,11 +73,17 @@
     justify-content: center;
     margin-bottom: 30px;
 
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+    width: 450px;
+    height: 120px;
+}
+
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     width: 354px;
     height: 120px;
-    margin-bottom: 30px;
 }
+
+
 }
 
 }
