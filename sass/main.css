@@ -1357,12 +1357,12 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .checkbox {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .checkbox {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 }
 .checkbox__is-hidden {

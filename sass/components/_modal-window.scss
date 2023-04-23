@@ -130,6 +130,7 @@ fill: currentColor;}
     color: v.$accent-color;
 }
 
+
 &__input-space {
     width: 448px;
     height: 40px;
@@ -204,11 +205,11 @@ fill: currentColor;}
 .checkbox {
     margin-bottom: 30px;
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     }
 
 @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     }
 
 &__is-hidden {
