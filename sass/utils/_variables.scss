@@ -25,6 +25,7 @@ a {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -39,12 +40,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    width: 480px;
 
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    @media screen and (min-width: b.$tablet-min) {
         width: 768px;
     }
 

@@ -41,17 +41,7 @@
 }
 
 .menu-button {
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-            display: none;
-}
-    
-@media screen and (min-width: b.$desktop) {
-            display: none;
-}
-
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    
-    margin-left: auto;
+margin-left: auto;
     margin-top: 22px;
     margin-bottom: 22px;
     margin-right: 23px;
@@ -61,7 +51,16 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    
+
+@media screen and (min-width: b.$tablet-min) {
+            display: none;
+}
+    
+@media screen and (min-width: b.$desktop) {
+            display: none;
+}
 
 
 &:hover,
@@ -79,12 +78,12 @@
 
 .nav{
 @media screen and (min-width: b.$desktop) {
-margin-left: 93px;
+margin-left: auto;
 } 
 @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-margin-left: 88px;  
+margin-left: auto;  
 }    
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+@media screen and (max-width: b.$mobile-max) {
     display: none;
 }
 
@@ -167,7 +166,7 @@ margin-left: 88px;
 
 .contacts-list {
     
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+@media screen and (max-width: b.$mobile-max) {
     display: none;
 }
 

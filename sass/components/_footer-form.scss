@@ -3,30 +3,13 @@
 
 
 .footer-form {
-margin-left: 93px;
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-margin-left: 0px;
-margin-top: 52px;
+
+@media screen and (max-width: b.$tablet-max) {
 display: flex;
 flex-direction: column;
 align-items: center;
 }
 
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-margin-left: 0px;
-margin-top: 60px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-&__start {
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-}
 
 &__title {
     display: block;
@@ -41,23 +24,18 @@ align-items: center;
 }
 
 &__label {
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+@media screen and (max-width: b.$tablet-max) {
     display: flex;
     flex-direction: column;
     align-items: center;
     }
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 }
 
 &__input-space {
-    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));*/
     border-radius: 4px;
     background-color: #2F303A;
     color: #FFFFFF;
@@ -69,15 +47,19 @@ align-items: center;
     padding-bottom: 15px;
     padding-left: 16px;
     transition: border-color v.$time v.$time-function;
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    width: 450px;
-    height: 50px;
-    margin-bottom: 20px;
+
+/* For Styles below mobile-min */    
+@media screen and (max-width: b.$mobile-min) {
+            width: 100%;
+            margin-bottom: 20px;
 }
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    width: 450px;
-    height: 50px;
+
+@media screen and (min-width: b.$mobile-min) and (max-width: b.$tablet-max) {
     margin-bottom: 20px;
+    width: 450px;
+}
+@media screen and (min-width: b.$desktop) {
+    width: 358px;
 }
 }
 

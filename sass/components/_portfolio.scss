@@ -1,5 +1,5 @@
 @use '../utils/variables' as v;
-@use '../utils/breakpoints';
+@use '../utils/breakpoints' as b;
 
 
 .portfolio {
@@ -58,11 +58,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+
+@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    }
+    
 }
 
 &__pic-item {
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
+    cursor: pointer;
 }
 
 &__pic-item:hover,

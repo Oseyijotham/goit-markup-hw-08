@@ -11,37 +11,38 @@
 
 &__container {
     display: flex;
+
+    @media screen and (max-width: b.$mobile-max) {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    }
+
     @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
     flex-wrap: wrap;
     justify-content: space-around;
+    row-gap: 56px;
 }
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    flex-direction: column;
-    align-items: center;
-}
+    @media screen and (min-width: b.$desktop) {
+     justify-content: space-between;   
+    }
+
 }
 
 &__info-area {
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    align-items: center;
-    }
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    align-items: center;
-    }
+    @media screen and (max-width: b.$tablet-max) {
+            align-items: center;
+        }
 }
 
 &__info-list {
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    }
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    display: flex;
-    flex-direction: column;
+
+    @media screen and (max-width: b.$tablet-max) {
     align-items: center;
     }
 }
@@ -50,23 +51,21 @@
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: v.$font-weight-max;
-    font-size: 26px;
-    line-height: calc(31/26);
     letter-spacing: 0.03em;
     color: v.$accent-color;
-    margin-bottom: 9px;
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+
+@media screen and (max-width: b.$tablet-max) {
     font-size: 24px;
     line-height: calc(28/24);
     margin-bottom: 13px;
-    text-align: center;
-}
     
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    font-size: 24px;
-    line-height: calc(28/24);
-    margin-bottom: 13px;
-    text-align: center;
+}
+
+@media screen and (min-width: b.$desktop) {
+    font-size: 26px;
+    line-height: calc(31/26);
+    margin-bottom: 9px;
+
 }
 
 }
@@ -74,13 +73,9 @@
 &__address-link {
 display: flex;
 flex-direction: column;
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+@media screen and (max-width: b.$tablet-max) {
 align-items: center;
 }
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-align-items: center;
-}
-   
 }
 
 /*&__info-item:not(:last-child) {
@@ -146,17 +141,8 @@ margin-bottom: 9px;
 
 
 .footer-socials {
-    margin-left: 70px;
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    align-items: center;
-    margin-left: 0px;
-    margin-top: 48px;
-    }
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    margin-left: 234px;
-}
-
-
+    
+   
 
 &__title {
     font-style: normal;
@@ -167,13 +153,9 @@ margin-bottom: 9px;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
+@media screen and (max-width: b.$tablet-max) {
      text-align: center;   
     }
-
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    text-align: center;
-  }
 }
 
 &__list {
