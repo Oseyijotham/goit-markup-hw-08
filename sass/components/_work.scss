@@ -4,11 +4,9 @@
 
 .work {
     padding-bottom: 94px;
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    @media screen and (max-width: b.$tablet-max) {
         display: none;}
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-        display: none;
-}
+ 
 
 
 
