@@ -5,7 +5,7 @@
 .work {
     padding-bottom: 94px;
     @media screen and (max-width: b.$tablet-max) {
-        display: none;}
+    display: none;}
  
 
 
@@ -25,14 +25,16 @@
 
 &__list {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 
 &__item {
     position: relative;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 

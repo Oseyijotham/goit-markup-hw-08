@@ -3,48 +3,62 @@
 
 
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundImage.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\ mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\ mobile@2x.jpg);
+}
 
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px; 
+@media screen and (min-width: b.$tablet-min) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\ tablet.jpg);
      
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: b.$tablet-min),
+screen and (min-resolution: 192dpi) and (min-width: b.$tablet-min),
+screen and (min-resolution: 2dppx) and (min-width: b.$tablet-min)
+{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/backgroundImage\ tablet.jpg);
+
+}
+
+@media screen and (min-width: b.$desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/backgroundImage.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: b.$desktop),
+screen and (min-resolution: 192dpi) and (min-width: b.$desktop),
+screen and (min-resolution: 2dppx) and (min-width: b.$desktop) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/backgroundImage@2x.jpg);
+
+}
 
 &__title {
     text-align: center;
     font-weight: v.$font-weight-ultra-max;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: calc(42/26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
    
-@media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
-    font-size: 26px;
-    line-height: calc(42/26);
-    
+@media screen and (min-width: b.$desktop) {
+    font-size: 44px;
+    line-height: calc(60/44);
     }
-
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    font-size: 26px;
-    line-height: calc(42/26);
-    
-}
 }
 
 &__button {

@@ -29,6 +29,8 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    /* width: 100% -> the image will take up the full width of its parent container */
+    /* max-width: 100% -> ensures that the image will not exceed its original size */
 }
 
 
