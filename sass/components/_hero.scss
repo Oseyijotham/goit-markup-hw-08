@@ -6,7 +6,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\ mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,11 +14,11 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\ mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\mobile@2x.jpg);
 }
 
 @media screen and (min-width: b.$tablet-min) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\ tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage\tablet.jpg);
      
 }
 
@@ -27,7 +27,7 @@ screen and (min-resolution: 192dpi) and (min-width: b.$tablet-min),
 screen and (min-resolution: 2dppx) and (min-width: b.$tablet-min)
 {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/backgroundImage\ tablet.jpg);
+    url(../../images/backgroundImage\tablet.jpg);
 
 }
 
