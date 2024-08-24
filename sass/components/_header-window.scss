@@ -107,9 +107,11 @@
 }
 
 .window-contacts-list{
-    
+    display: flex;
+    flex-direction: column;
+    gap:16px;
 
-&__link[href="tel:+380961111111"] {
+&__link {
 display: block;
 font-weight: v.$font-weight-mid;
 letter-spacing: 0.02em;
@@ -121,15 +123,7 @@ letter-spacing: 0.02em;
 }
 
 &__link[href="mailto:example@gmail.ru"] {
-display: block;
-font-weight: v.$font-weight-mid;
-letter-spacing: 0.02em;
-margin-top: 32px;
-color: #757575;
-transition: color v.$time v.$time-function;
-font-size: 24px;
 line-height: calc(28/24);
-letter-spacing: 0.02em;
 }
 
 &__link:hover,
@@ -156,7 +150,7 @@ margin-right: 10px;
 }
 
 &__link{
-font-size: 10px;
+font-size: 14px;
 line-height: calc(22/18);
 letter-spacing: 0.02em;
 color: #757575;
