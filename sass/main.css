@@ -61,16 +61,12 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #2196F3;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .logo {
-    font-size: 24px;
-    line-height: 1.1666666667;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .logo {
     font-size: 24px;
     line-height: 1.1666666667;
@@ -101,11 +97,6 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .menu-button {
-    display: none;
-  }
-}
 .menu-button:hover, .menu-button:focus {
   color: #2196F3;
 }
@@ -113,19 +104,14 @@ body {
   fill: currentColor;
 }
 
-@media screen and (min-width: 1200px) {
-  .nav {
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav {
-    margin-left: auto;
-  }
-}
 @media screen and (max-width: 767px) {
   .nav {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    margin-left: auto;
   }
 }
 .nav__list {
@@ -201,6 +187,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -226,26 +213,18 @@ body {
   display: block;
   position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__link {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts-list__link {
     font-size: 14px;
     line-height: 1.1428571429;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts-list__link[href="mailto:example@gmail.ru"] {
-    font-size: 12px;
-    line-height: 1.1666666667;
-    padding-top: 21px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts-list__link[href="tel:+380961111111"] {
-    font-size: 12px;
-    line-height: 1.1666666667;
-    padding-top: 10px;
   }
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
@@ -301,13 +280,6 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /*@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-      display: none;
-  }
-
-  @media screen and (min-width: b.$desktop) {
-          display: none;
-      }*/
 }
 .header-window__button {
   background-color: white;
@@ -914,6 +886,7 @@ body {
 @media screen and (max-width: 1199px) {
   .footer__address-link {
     align-items: center;
+    text-align: center;
   }
 }
 .footer__info-item:nth-child(2) {
@@ -1393,6 +1366,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  text-align: center;
 }
 @media screen and (max-width: 1199px) {
   .footer-form__label {

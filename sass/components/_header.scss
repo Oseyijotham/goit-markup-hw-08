@@ -22,14 +22,14 @@
     font-weight: v.$font-weight-max;
     letter-spacing: 0.03em;
     color: v.$accent-color;
-    @media screen and (min-width: b.$mobile-min) and (max-width: b.$mobile-max) {
     font-size: 24px;
     line-height: calc(28/24);
     padding-top: 16px;
     padding-bottom: 16px;
-}
+
+
     
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max){
+    @media screen and (min-width: b.$tablet-min) {
     font-size: 24px;
     line-height: calc(28/24);
 }
@@ -58,9 +58,6 @@ margin-left: auto;
             display: none;
 }
     
-@media screen and (min-width: b.$desktop) {
-            display: none;
-}
 
 
 &:hover,
@@ -77,15 +74,13 @@ margin-left: auto;
 
 
 .nav{
-@media screen and (min-width: b.$desktop) {
-margin-left: auto;
-} 
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+@media screen and (max-width: b.$mobile-max) {
+display: none;
+}
+@media screen and (min-width: b.$tablet-min) {
 margin-left: auto;  
 }    
-@media screen and (max-width: b.$mobile-max) {
-    display: none;
-}
+
 
 &__list {
     display: flex;
@@ -174,6 +169,7 @@ margin-left: auto;
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    gap:10px;
     
 }
 
@@ -202,6 +198,10 @@ margin-left: auto;
     display: block;
     position: relative;
     
+    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
+    font-size: 12px;
+    line-height: calc(14/12);
+    }
     
     @media screen and (min-width: b.$desktop) {
     font-size: 14px;
@@ -209,20 +209,6 @@ margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-}
-&__link[href="mailto:example@gmail.ru"] {
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    font-size: 12px;
-    line-height: calc(14/12);
-    padding-top: 21px;
-}
-}
-
-&__link[href="tel:+380961111111"] {
-    @media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    font-size: 12px;
-    line-height: calc(14/12);
-    padding-top: 10px;}
 }
 
 
