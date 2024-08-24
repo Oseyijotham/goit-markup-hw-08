@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: b.$tablet-min) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/backgroundImage_tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundImage_tablet.jpg);
      
 }
 
@@ -27,7 +27,7 @@ screen and (min-resolution: 192dpi) and (min-width: b.$tablet-min),
 screen and (min-resolution: 2dppx) and (min-width: b.$tablet-min)
 {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/backgroundImage_tablet@2x.jpg);
+    url(../images/backgroundImage_tablet@2x.jpg);
 
 }
 
@@ -42,7 +42,7 @@ screen and (min-resolution: 2dppx) and (min-width: b.$tablet-min)
 screen and (min-resolution: 192dpi) and (min-width: b.$desktop),
 screen and (min-resolution: 2dppx) and (min-width: b.$desktop) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/backgroundImage@2x.jpg);
+    url(../images/backgroundImage@2x.jpg);
 
 }
 
