@@ -285,7 +285,7 @@ body {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header-window__button {
   background-color: white;
