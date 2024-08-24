@@ -69,6 +69,7 @@
 &__list{
     display: flex;
     flex-direction: column;
+    gap:15px;
 }
 
 &__link{
@@ -78,17 +79,9 @@
     line-height: calc(47/40);
     letter-spacing: 0.02em;
     color: #212121;
-    position: relative;
     transition: color v.$time v.$time-function;
 }
 
-&__link[href="index.html"] {
-    padding-bottom: 35.71px;
-}
-
-&__link[href="portfolio.html"] {
-    padding-bottom: 32px;
-}
 
 &__link:hover,
 &__link:focus {
