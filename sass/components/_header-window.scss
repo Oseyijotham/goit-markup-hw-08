@@ -116,7 +116,7 @@ letter-spacing: 0.02em;
 color: #757575;
 transition: color v.$time v.$time-function;
 font-size: 24px;
-line-height: calc(40/34);
+line-height: calc(40/24);
 letter-spacing: 0.02em;
 }
 
@@ -156,7 +156,7 @@ margin-right: 10px;
 }
 
 &__link{
-font-size: 18px;
+font-size: 10px;
 line-height: calc(22/18);
 letter-spacing: 0.02em;
 color: #757575;
