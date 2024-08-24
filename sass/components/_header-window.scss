@@ -24,6 +24,7 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    padding: 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -31,6 +32,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 
         &__button {
@@ -60,13 +64,11 @@
 }
 
 .window-nav{
-margin-bottom: 302px;
+
 
 &__list{
     display: flex;
     flex-direction: column;
-    margin-top: 48px;
-    margin-left: 40px;  
 }
 
 &__link{
@@ -98,8 +100,14 @@ margin-bottom: 302px;
 }
 }
 
+.window-contacts{
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+}
+
 .window-contacts-list{
-    margin-left: 40px;
+    
 
 &__link[href="tel:+380961111111"] {
 display: block;
@@ -135,9 +143,8 @@ letter-spacing: 0.02em;
 
 }
 
-.window-socials-list{
-margin-top: 64px;    
-margin-left: 40px;
+.window-socials-list{  
+
 display: flex;
 align-items: center;
 
