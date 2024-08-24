@@ -35,7 +35,7 @@ screen and (min-resolution: 2dppx) and (min-width: b.$tablet-min)
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/backgroundImage.jpg);
+            url(../images/backgroundImage.jpg);
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: b.$desktop),
