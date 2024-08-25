@@ -36,6 +36,14 @@ img {
 
 body {
     font-family: 'Roboto', sans-serif;
+    
+}
+
+.body{
+
+    &__no-scroll {
+            overflow: hidden;
+        }
 }
 
 .container {

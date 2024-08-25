@@ -25,6 +25,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.body__no-scroll {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -259,7 +263,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
   top: 0;
   left: 0;
   opacity: 1;
