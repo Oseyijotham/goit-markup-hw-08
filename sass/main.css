@@ -83,6 +83,10 @@ body {
   }
 }
 
+.logo-part {
+  color: #000000;
+}
+
 .menu-button {
   margin-left: auto;
   margin-top: 22px;
