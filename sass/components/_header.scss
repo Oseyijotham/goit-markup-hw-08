@@ -89,12 +89,9 @@ margin-left: auto;
 &__list {
     display: flex;
     align-items: center;
-    
+    gap:53px;
 }
 
-&__item:not(:last-child) {
-    margin-right: 53px;
-}
 }
 
 .nav__link {

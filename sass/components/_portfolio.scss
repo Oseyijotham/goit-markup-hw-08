@@ -17,12 +17,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-
+    gap:8px;
+    flex-wrap: wrap;
 }
 
-&__item:not(:last-child) {
-    margin-right: 8px;
-}
 
 &__link {
     border: none;
@@ -55,15 +53,11 @@
 }
 
 &__pic-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-
-@media screen and (min-width: b.$tablet-min) and (max-width: b.$tablet-max) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    }
+    display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
     
 }
 
@@ -71,6 +65,17 @@
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
     cursor: pointer;
+    @media screen and (max-width: b.$mobile-max) {
+            width: 100%;
+        }
+    
+        @media screen and (min-width: b.$tablet-min) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: b.$desktop) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
 }
 
 &__pic-item:hover,
