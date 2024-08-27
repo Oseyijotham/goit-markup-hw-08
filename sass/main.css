@@ -1140,6 +1140,11 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 480px) {
+  .modal-window__title {
+    margin-bottom: 5px;
+  }
+}
 
 .info {
   margin-bottom: 10px;
