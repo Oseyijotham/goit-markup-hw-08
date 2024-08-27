@@ -1204,7 +1204,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .info__comments-input-space {
-    height: 50px;
+    height: 20px;
   }
 }
 .info__comments-input-space:hover, .info__comments-input-space:focus {
