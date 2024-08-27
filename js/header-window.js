@@ -3,7 +3,7 @@
     openModalBtn: document.querySelector("[header-window-open]"),
     closeModalBtn: document.querySelector("[header-window-close]"),
     siteBody: document.querySelector("body"),
-    headerWindow: document.querySelector(".header-window"),
+    //headerWindow: document.querySelector(".header-window"),
     modal: document.querySelector("[header-window]"),
   };
 
