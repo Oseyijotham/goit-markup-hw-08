@@ -31,6 +31,11 @@
     transform: translate(-50%, -50%);
     padding: 40px;
     width: 90vw;
+    
+
+@media screen and (max-width: b.$mobile-min) {
+        height: 90vh;
+    }
 
 @media screen and (min-width: b.$mobile-min){
         width:450px;
@@ -75,10 +80,6 @@ fill: currentColor;}
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
-
-    @media screen and (max-width:b.$mobile-min){
-    margin-bottom: 5px;
-    }
 }
 
 

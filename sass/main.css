@@ -1099,6 +1099,11 @@ body {
   padding: 40px;
   width: 90vw;
 }
+@media screen and (max-width: 480px) {
+  .modal-window {
+    height: 90vh;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal-window {
     width: 450px;
@@ -1139,11 +1144,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
-}
-@media screen and (max-width: 480px) {
-  .modal-window__title {
-    margin-bottom: 5px;
-  }
 }
 
 .info {
