@@ -156,7 +156,7 @@ fill: currentColor;}
     letter-spacing: 0.01em;
     transition: border-color v.$time v.$time-function;
 
-    @media screen and (max-width: b.$mobile-min) {
+    @media screen and (max-width: b.$mobile-max) {
         
         height: auto;
     }
