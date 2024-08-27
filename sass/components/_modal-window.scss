@@ -30,6 +30,15 @@
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+    width: 90vw;
+
+@media screen and (min-width: b.$mobile-min){
+        width:450px;
+}
+
+@media screen and (min-width: b.$desktop) {
+    width:528px;
+}
 
 
 &__button {
@@ -65,6 +74,7 @@ fill: currentColor;}
     line-height: calc(23/20);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
 }
 
 
