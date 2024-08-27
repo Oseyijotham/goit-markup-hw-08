@@ -157,7 +157,8 @@ fill: currentColor;}
     transition: border-color v.$time v.$time-function;
 
     @media screen and (max-width: b.$mobile-min) {
-            height: 35px;
+        
+        height: auto;
     }
 
 }
