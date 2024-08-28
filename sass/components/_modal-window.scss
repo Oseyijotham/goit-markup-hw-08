@@ -31,6 +31,9 @@
     transform: translate(-50%, -50%);
     padding: 40px;
     width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 @media screen and (min-width: b.$mobile-min){
         width:450px;
@@ -238,8 +241,8 @@ line-height: calc(24/14);
     font-weight: v.$font-weight-max;
     font-size: 16px;
     line-height: calc(30/16);
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     border: none;
@@ -247,6 +250,11 @@ line-height: calc(24/14);
     margin-right: auto;
     cursor: pointer;
     transition: color v.$time v.$time-function;
+
+    @media screen and (max-width: b.$mobile-min) {
+        padding-left:20% ;
+        padding-right:20% ;
+    }
 
 
 &:hover,
