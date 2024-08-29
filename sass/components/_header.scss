@@ -222,7 +222,26 @@ margin-left: auto;
     color: purple;
 }
 
+@media screen and (min-width:b.$desktop){
+&__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: v.$accent-color;
+    transform: scaleX(0);
+    transition: transform v.$time v.$time-function;
+    transform-origin: left;
+}
 
+&__link:hover::after {
+    transform: scaleX(1);
+}
+}
 
 /* HEADER ICONS */
 &__icon {
