@@ -51,10 +51,15 @@ body {
   }
 }
 
-.header {
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header-portfolio {
   border-bottom: 1px solid #ececec;
 }
-.header__container {
+.header-portfolio__container {
   display: flex;
   align-items: center;
 }
@@ -229,8 +234,8 @@ body {
   .contacts-list__link {
     font-size: 14px;
     line-height: 1.1428571429;
-    /*padding-top: 32px;
-    padding-bottom: 32px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
