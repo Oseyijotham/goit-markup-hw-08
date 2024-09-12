@@ -207,8 +207,8 @@ margin-left: auto;
     @media screen and (min-width: b.$desktop) {
     font-size: 14px;
     line-height: calc(16/14);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /*padding-top: 32px;
+    padding-bottom: 32px;*/
 }
 }
 
@@ -222,7 +222,9 @@ margin-left: auto;
     color: purple;
 }
 
+
 @media screen and (min-width:b.$desktop){
+/*
 &__link::after {
     content: "";
     position: absolute;
@@ -237,6 +239,7 @@ margin-left: auto;
     transition: transform v.$time v.$time-function;
     transform-origin: left;
 }
+*/
 
 &__link:hover::after {
     transform: scaleX(1);
