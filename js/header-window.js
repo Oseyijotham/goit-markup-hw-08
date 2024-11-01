@@ -11,8 +11,8 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('menu__is-hidden');
-    refs.siteBody.classList.toggle("body__no-scroll");
+    refs.modal.classList.toggle('menu--hidden');
+    refs.siteBody.classList.toggle("no-scroll");
     //refs.headerWindow.classList.toggle("header-window__scroll");
   }
 })();
