@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" as="image" href="./images/backgroundImage.jpg">
-    <link rel="preload" as="image" href="images/backgroundImage@2x.jpg">
-    <link rel="preload" as="image" href="./images/backgroundImage_tablet.jpg">
-    <link rel="preload" as="image" href="./images/backgroundImage_tablet@2x.jpg">
-    <link rel="preload" as="image" href="./images/backgroundImage_mobile.jpg">
-    <link rel="preload" as="image" href="./images/backgroundImage_mobile@2x.jpg">
+    <!-- Desktop Image -->
+<link rel="preload" as="image" href="./images/backgroundImage.jpg" media="(min-width: 1024px)">
+<link rel="preload" as="image" href="./images/backgroundImage@2x.jpg" media="(min-width: 1024px)">
+
+<!-- Tablet Image -->
+<link rel="preload" as="image" href="./images/backgroundImage_tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+<link rel="preload" as="image" href="./images/backgroundImage_tablet@2x.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+
+<!-- Mobile Image -->
+<link rel="preload" as="image" href="./images/backgroundImage_mobile.jpg" media="(max-width: 767px)">
+<link rel="preload" as="image" href="./images/backgroundImage_mobile@2x.jpg" media="(max-width: 767px)">
     <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
